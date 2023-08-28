@@ -4,11 +4,25 @@
 <head>
     <title>Electro Pepe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://db.onlinewebfonts.com/c/a163d087c4bfdff182eb1b4fcc595798?family=Sansation+Light"
+        rel="stylesheet">
     <style>
+        @import url(https://db.onlinewebfonts.com/c/a163d087c4bfdff182eb1b4fcc595798?family=Sansation+Light);
+
+        @font-face {
+            font-family: "Sansation Light";
+            src: url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.eot");
+            src: url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.eot?#iefix")format("embedded-opentype"),
+                url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.woff2")format("woff2"),
+                url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.woff")format("woff"),
+                url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.ttf")format("truetype"),
+                url("https://db.onlinewebfonts.com/t/a163d087c4bfdff182eb1b4fcc595798.svg#Sansation Light")format("svg");
+        }
+
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: black;
+            font-family: "Sansation Light";
         }
 
         .hero-image {
@@ -75,9 +89,21 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        .button1 :hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.789), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
 
         .header {
+            position: sticky;
+            top: -225px;
+            z-index: 999;
             text-align: center;
             overflow: hidden;
             background-image: linear-gradient(to left, rgb(79, 46, 119), rgb(8, 90, 55));
@@ -172,6 +198,16 @@
             .ca {
                 font-size: 12px;
             }
+
+            .header {
+                position: sticky;
+                top: -150px;
+                z-index: 999;
+                text-align: center;
+                overflow: hidden;
+                background-image: linear-gradient(to left, rgb(79, 46, 119), rgb(8, 90, 55));
+                padding: 0px 0px;
+            }
         }
     </style>
 </head>
@@ -183,8 +219,8 @@
 
         <h1 class="h1">ELECTRO PEPE</h1>
         <div class="eko">
-            <a href="https://twitter.com/electropepe1" style="display: inline-block;"><img src="twi-w.png" width="50px" height="50px"
-                    id=logo alt="Logo image" style="border-radius: 50%;margin-right: 10px; " /> </a>
+            <a href="https://twitter.com/electropepe1" style="display: inline-block;"><img src="twi-w.png" width="50px"
+                    height="50px" id=logo alt="Logo image" style="border-radius: 50%;margin-right: 10px; " /> </a>
             <a href="https://t.me/electropepe1" style="display: inline-block;"><img src="telegram-icon.png" width="50px"
                     height="50px" id=logo alt="Logo image" style="border-radius: 50%;margin-right: 10px;" /></a>
             <a href="link address" style="display: inline-block;"><img src="scan-w.png" width="50px" height="50px"
@@ -199,7 +235,7 @@
         <div class="hero-text">
             <h1>I am big dad Electro Pepe for the community reaching %0 tax</h1>
             <h3>And I'm repairing old Television Stuff, for %0 buy and sell tax after a while</h3>
-            <button class="button">Buy Here</button>
+            <button class="button button1">Buy Here</button>
         </div>
     </div>
     <div class="hero-image2">
@@ -223,7 +259,7 @@
         <div class="hero-text">
             <h1>I am the Token at CA: </h1>
             <h1 class="ca">
-                0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             </h1>
             <h1><br>
                 Initial Tax: %22.0
